@@ -1,1 +1,1 @@
-# template
+# Scaffolding templates for different projects
