@@ -1,10 +1,10 @@
 [package]
-name = ""
+name = "untitled"
 version = "0.1.0"
 edition = "2021"
 authors = ["shixinhuang99 <shixinhuang99@gmail.com>"]
-description = ""
-repository = ""
+description = "none"
+repository = "none"
 license = "MIT"
 categories = []
 keywords = []
@@ -21,3 +21,4 @@ include = [
 strip = true
 lto = true
 panic = "abort"
+codegen-units = 1
