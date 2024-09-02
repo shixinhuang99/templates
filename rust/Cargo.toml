@@ -6,8 +6,6 @@ authors = ["shixinhuang99 <shixinhuang99@gmail.com>"]
 description = "none"
 repository = "none"
 license = "MIT"
-categories = []
-keywords = []
 include = [
 	"Cargo.toml",
 	"Cargo.lock",

@@ -4,6 +4,13 @@ alias pt := push-tag
 default:
 	just --list --unsorted
 
+show-toolchain:
+	rustup -V
+	rustc -V
+	cargo -V
+	cargo fmt --version
+	cargo clippy -V
+
 fmt:
 	cargo fmt
 	taplo fmt
