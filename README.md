@@ -1,1 +1,1 @@
-templates for [scafalra](https://github.com/shixinhuang99/scafalra)
+Templates for personal use

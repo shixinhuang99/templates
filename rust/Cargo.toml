@@ -6,14 +6,17 @@ authors = ["shixinhuang99 <shixinhuang99@gmail.com>"]
 description = "none"
 repository = "none"
 license = "MIT"
-include = [
-	"Cargo.toml",
-	"Cargo.lock",
-	"README.md",
-	"LICENSE",
-	"src/**",
-	".cargo",
-]
+publish = false
+
+# if publish
+# categories = []
+# keywords = []
+# include = ["Cargo.toml", "Cargo.lock", "README.md", "LICENSE", "src/**"]
+
+# if workspace
+# [workspace]
+# members = []
+# resolver = "2"
 
 [profile.release]
 strip = true

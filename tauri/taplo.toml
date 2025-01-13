@@ -1,4 +1,4 @@
-include = ["*.toml", ".cargo/*.toml"]
+include = ["*.toml", ".cargo/*.toml", "tauri/*.toml"]
 
 [[rule]]
 include = ["**/Cargo.toml"]
