@@ -26,8 +26,7 @@
   "bundle": {
     "active": true,
     "targets": ["dmg", "nsis"],
-    "_icon": [
-      "../assets/iconhere",
+    "icon": [
       "../assets/128x128.png",
       "../assets/128x128@2x.png",
       "../assets/icon.icns",
@@ -44,7 +43,7 @@
         "type": "skip"
       },
       "nsis": {
-        "_installerIcon": "../assets/icon.ico"
+        "installerIcon": "../assets/icon.ico"
       }
     }
   }
