@@ -1,6 +1,7 @@
 import { LoaderCircle } from 'lucide-react';
 import { StrictMode, Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
+import { initI18n } from '~/i18n';
 
 function Loading() {
   return (
@@ -18,6 +19,8 @@ function main() {
   if (!root) {
     throw new Error('no root element');
   }
+
+  initI18n();
 
   createRoot(root).render(
     <StrictMode>

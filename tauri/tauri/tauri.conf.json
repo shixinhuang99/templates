@@ -7,22 +7,6 @@
     "devUrl": "http://localhost:4000",
     "frontendDist": "../ui/dist"
   },
-  "app": {
-    "windows": [
-      {
-        "title": "Untitled",
-        "width": 1000,
-        "minWidth": 1000,
-        "height": 700,
-        "minHeight": 700,
-        "resizable": true,
-        "center": true
-      }
-    ],
-    "security": {
-      "csp": null
-    }
-  },
   "bundle": {
     "active": true,
     "targets": ["dmg", "nsis"],
@@ -34,7 +18,6 @@
       "../assets/icon.png"
     ],
     "category": "",
-    "licenseFile": "../LICENSE",
     "shortDescription": "",
     "useLocalToolsDir": true,
     "windows": {
@@ -45,6 +28,10 @@
       "nsis": {
         "installerIcon": "../assets/icon.ico"
       }
+    },
+    "macOS": {
+      "minimumSystemVersion": "12.0.1",
+      "signingIdentity": null
     }
   }
 }
