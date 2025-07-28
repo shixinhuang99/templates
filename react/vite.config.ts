@@ -6,7 +6,13 @@ export default defineConfig(async () => {
   const { default: pkg } = await import('./package.json');
 
   return {
-    plugins: [react()],
+    plugins: [
+      react({
+        babel: {
+          plugins: [['babel-plugin-react-compiler', { target: '18' }]],
+        },
+      }),
+    ],
     clearScreen: false,
     server: {
       port: 4000,
@@ -23,8 +29,10 @@ export default defineConfig(async () => {
       },
     },
     define: {
-      PKG_NAME: JSON.stringify(pkg.name),
+      PKG_NAME: JSON.stringify(pkg.productName),
       PKG_VERSION: JSON.stringify(pkg.version),
+      REPOSITORY_URL: JSON.stringify(pkg.repository.url),
+      PLATFORM: JSON.stringify(process.platform),
     },
     build: {
       chunkSizeWarningLimit: 1000,

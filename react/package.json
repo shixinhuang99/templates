@@ -1,0 +1,45 @@
+{
+  "name": "untitled",
+  "private": true,
+  "version": "0.1.0",
+  "author": "shixinhuang99 <shixinhuang99@gmail.com>",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+.git"
+  },
+  "homepage": "",
+  "description": "",
+  "scripts": {
+    "fmt": "biome check --linter-enabled=false --write",
+    "check": "biome check",
+    "typecheck:ui": "tsc -p ./ui/tsconfig.json --noEmit",
+    "typecheck:other": "tsc -p ./tsconfig.json --noEmit",
+    "dev": "vite",
+    "build": "tailwindcss -i input.css -o output.css && tsc && vite build",
+    "preview": "vite preview",
+    "tailwindcss": "tailwindcss -i input.css -o output.css --watch"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwind-scrollbar": "^3.1.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.11"
+  }
+}
