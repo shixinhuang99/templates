@@ -55,15 +55,39 @@
           "features": "all"
         }
       }
+    },
+    "vtsls": {
+      "settings": {
+        "vtsls": {
+          "autoUseWorkspaceTsdk": true
+        },
+        "typescript": {
+          "preferences": {
+            "includePackageJsonAutoImports": "off",
+            "jsxAttributeCompletionStyle": "none"
+          },
+          "suggest": {
+            "autoImports": false
+          },
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      }
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
     }
   },
   "format_on_save": "off",
   "indent_guides": {
-    "coloring": "indent_aware",
-    "background_coloring": "disabled"
+    "coloring": "indent_aware"
   },
   "image_viewer": {
     "unit": "decimal"
   },
-  "show_edit_predictions": false
+  "show_edit_predictions": false,
+  "auto_signature_help": true
 }
