@@ -1,0 +1,69 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "agent": {
+    "use_modifier_to_send": false,
+    "single_file_review": true,
+    "default_profile": "minimal",
+    "default_model": {
+      "provider": "deepseek",
+      "model": "deepseek-chat"
+    }
+  },
+  "icon_theme": "Zed (Default)",
+  "theme": {
+    "mode": "light",
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "One Dark Pro"
+  },
+  "buffer_font_size": 16,
+  "auto_update": false,
+  "buffer_font_features": {
+    "calt": false
+  },
+  "title_bar": {
+    "show_branch_icon": true
+  },
+  "minimap": {
+    "show": "always",
+    "current_line_highlight": "line"
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "all"
+  },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "terminal": {
+    "cursor_shape": "bar"
+  },
+  "restore_on_startup": "last_workspace",
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+          "extraArgs": ["--no-deps", "--", "-D", "warnings"],
+          "features": "all"
+        }
+      }
+    }
+  },
+  "format_on_save": "off",
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "background_coloring": "disabled"
+  },
+  "image_viewer": {
+    "unit": "decimal"
+  },
+  "show_edit_predictions": false
+}
