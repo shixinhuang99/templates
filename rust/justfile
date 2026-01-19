@@ -1,7 +1,7 @@
 # required cli tools: taplo-cli,cargo-edit
-
-alias rp := release-pr
-alias pt := push-tag
+# Installation by cargo
+# cargo install taplo-cli
+# cargo install cargo-edit -f --no-default-features --features "set-version"
 
 default:
 	just --list --unsorted
@@ -20,13 +20,4 @@ fmt:
 check:
 	cargo fmt --check
 	taplo fmt --check
-	cargo clippy --all-features -- -D warnings
-
-release-pr tag:
-	cargo set-version {{tag}}
-	just fmt
-	git commit -am "chore(release): {{tag}}"
-
-push-tag tag:
-	git tag {{tag}}
-	git push origin {{tag}}
+	cargo clippy --no-deps --all-features -- -D warnings

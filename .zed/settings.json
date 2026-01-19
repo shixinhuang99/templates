@@ -7,13 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "colorize_brackets": true,
+  "show_edit_predictions": true,
   "agent": {
+    "always_allow_tool_actions": true,
     "use_modifier_to_send": false,
     "single_file_review": true,
-    "default_profile": "minimal",
+    "default_profile": "write",
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-chat"
+      "provider": "zed.dev",
+      "model": "claude-haiku-4-5"
     }
   },
   "icon_theme": "Zed (Default)",
@@ -40,7 +43,7 @@
     "show_diagnostics": "all"
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "eager"
   },
   "terminal": {
     "cursor_shape": "bar"
@@ -58,6 +61,11 @@
     },
     "vtsls": {
       "settings": {
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
         "vtsls": {
           "autoUseWorkspaceTsdk": true
         },
@@ -87,7 +95,5 @@
   },
   "image_viewer": {
     "unit": "decimal"
-  },
-  "show_edit_predictions": false,
-  "auto_signature_help": true
+  }
 }
